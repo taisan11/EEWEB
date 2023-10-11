@@ -12,11 +12,27 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: 'EEWEB',
+      repo: 'https://github.com/taisan11/EEWEB',
+      loadSidebar: true,
+      copyCode: {
+        buttonText: {
+          '/en/': 'Copy and paste',
+          '/': 'コピペ',
+        },
+        errorText: {
+          '/en/': 'error',
+          '/': 'えらー',
+        },
+        successText: {
+          '/en/': 'copyd',
+          '/': 'コピーできた',
+        },
+      },
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
 </body>
 </html>
