@@ -8,12 +8,11 @@ await build({
   shims: {
     // see JS docs for overview and more options
     deno: true,
-    },
+  },
   package: {
     name: "EEWEB",
     version: Deno.args[0],
-    description:
-      "EEWEB",
+    description: "EEWEB",
     repository: {
       type: "git",
       url: "git+https://github.com/taisan11/EEWEB.git",
@@ -30,7 +29,7 @@ await build({
       "./package.json": "./package.json",
     },
     keywords: [
-        "EEWEB"
+      "EEWEB",
     ],
     engines: {
       "node": ">=16.0.0",

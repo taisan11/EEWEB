@@ -1,5 +1,3 @@
 // EEWEB
 
-export {
-    
-} from "";
+export {} from "";

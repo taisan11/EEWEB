@@ -9,11 +9,7 @@ assignees: ''
 
 **Bug description**
 
-
-**Information**
-OS:
-EEWEB version:
-deno or node version:
+**Information** OS: EEWEB version: deno or node version:
 
 **Steps to reproduce**
 

@@ -1,35 +1,35 @@
 {
-    "fmt": {
-      "files": {
-        "include": [
-          "README.md",
-          "deno.json",
-          "dnt.ts",
-          "src/"
-        ],
-        "exclude": [
-          "samples/node/node_modules",
-          "samples/ts-node/node_modules",
-          "src/bundles",
-          "test/playwright/node_modules",
-          "test/wrangler"
-        ]
-      }
-    },
-    "lint": {
-      "files": {
-        "include": ["samples/", "src/", "test/"],
-        "exclude": [
-          "samples/node/node_modules",
-          "samples/ts-node/node_modules",
-          "src/bundles",
-          "test/playwright/node_modules",
-          "test/wrangler"
-        ]
-      }
-    },
-    "tasks": {
-      "test": "deno fmt && deno lint && deno test test -A --fail-fast --doc --coverage=coverage --jobs --allow-read",
-      "dnt": "deno run -A dnt.ts $(git describe --tags $(git rev-list --tags --max-count=1))"
+  "fmt": {
+    "files": {
+      "include": [
+        "README.md",
+        "deno.json",
+        "dnt.ts",
+        "src/"
+      ],
+      "exclude": [
+        "samples/node/node_modules",
+        "samples/ts-node/node_modules",
+        "src/bundles",
+        "test/playwright/node_modules",
+        "test/wrangler"
+      ]
     }
+  },
+  "lint": {
+    "files": {
+      "include": ["samples/", "src/", "test/"],
+      "exclude": [
+        "samples/node/node_modules",
+        "samples/ts-node/node_modules",
+        "src/bundles",
+        "test/playwright/node_modules",
+        "test/wrangler"
+      ]
+    }
+  },
+  "tasks": {
+    "test": "deno fmt && deno lint && deno test test -A --fail-fast --doc --coverage=coverage --jobs --allow-read",
+    "dnt": "deno run -A dnt.ts $(git describe --tags $(git rev-list --tags --max-count=1))"
   }
+}
